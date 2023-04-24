@@ -32,13 +32,16 @@
                         <a class="nav-link active px-lg-4 rounded" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-lg-4 rounded" href="#">Features</a>
+                        <a class="nav-link px-lg-4 rounded" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-lg-4 rounded" href="#">Pricing</a>
+                        <a class="nav-link px-lg-4 rounded" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-lg-4 rounded" href="#">Blog</a>
+                        <a class="nav-link px-lg-4 rounded" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-lg-4 rounded" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -114,7 +117,7 @@
     <!-- services -->
 
 
-    <section class="services py-5 bg-light">
+    <section id="services" class="services py-5 bg-light">
         <div class="container py-5">
             <h1 class="text-center pb-5">Services.</h1>
             <div class="row pb-3">
@@ -204,7 +207,7 @@
 
     <!-- portfolio -->
 
-    <section class="portfolio py-5">
+    <section class="portfolio py-5" id="portfolio">
         <div class="container text-center py-5">
             <h1 class="text-center pb-5">Portfolio.</h1>
             <div class="control pb-5">
@@ -220,8 +223,7 @@
                     <div class="item">
                         <img src="assets/img/pot-4.jpg" class="img-fluid filter Brand Design Graphic" alt="">
                         <span>
-                            <i class="fa-solid fa-plus" data-bs-toggle="modal"
-                                data-bs-target="#portfoliomodal"></i>
+                            <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#portfoliomodal"></i>
                         </span>
                     </div>
                 </div>
@@ -266,8 +268,9 @@
         </div>
     </section>
 
+    <!-- blog -->
 
-    <section class="blog py-5">
+    <section id="blog" class="blog py-5" >
         <div class="container">
             <h1 class="text-center pb-5">Our Blog.</h1>
             <div class="row py-5">
@@ -303,9 +306,9 @@
     <!-- contact -->
 
 
-    <section class="contact py-5">
+    <section class="contact py-5" id="contact">
         <div class="container py-5">
-            <h1 class="text-center pb-5">Our Blog.</h1>
+            <h1 class="text-center pb-5">Contact Us.</h1>
             <div class="row py-5">
                 <div class="col-lg-10 mx-auto">
                     <div class="row text-center">
@@ -348,7 +351,8 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <textarea placeholder="Message" class="form-control bg-light mb-3" cols="30" rows="10"></textarea>
+                                <textarea placeholder="Message" class="form-control bg-light mb-3" cols="30"
+                                    rows="10"></textarea>
                             </div>
                         </div>
                         <button class="btn3 my-4">Submit</button>
@@ -387,9 +391,10 @@
         </div>
     </div>
 
-   
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -398,22 +403,22 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function(){
-            $('.item i').click(function(){
+        $(document).ready(function () {
+            $('.item i').click(function () {
                 // $(this).closest('.a');
 
                 var imgSrc = $(this).closest('.item').find('img').attr('src');
                 $('#portfoliomodalImg').attr('src', imgSrc);
             });
 
-            $(".button").click(function(){
-                let value =$(this).attr('data-filter');
-               
-                if(value == "all"){
+            $(".button").click(function () {
+                let value = $(this).attr('data-filter');
+
+                if (value == "all") {
                     $(".filter").show("100");
-                }else{
-                    $(".filter").not("."+value).hide("1000");
-                    $(".filter").filter("."+value).show("1000");
+                } else {
+                    $(".filter").not("." + value).hide("1000");
+                    $(".filter").filter("." + value).show("1000");
                 }
 
                 // $("ul.button").click(function(){
