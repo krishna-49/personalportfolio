@@ -51,16 +51,17 @@
 
     <!-- main section -->
 
-    <section class="main py-5 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+    <section class="main w-100 py-5 overflow-hidden d-flex justify-content-center align-items-center flex-column">
         <div class="container py-5 ">
             <div class="row py-5 me-auto">
                 <div class="col-lg-6">
-                    <h3><small>Hello, I'm</small><br>
+                    <h3 class="fw-bold fs-8"><small>Hello, I'm</small><br>
                         Joe Joseph
                     </h3>
-                    <h6 class="pb-4 lh-lg">PRO WEB-DESIGNER</h6>
-                    <input type="button" value="My Work" class="bt1 mt-3 me-3 border-0 fw-bold rounded">
-                    <input type="button" value="Hire Me" class="bt2 mt-3 fw-bold rounded">
+                    <h6 class="pb-4 lh-lg fs-4 port-primary-color">PRO WEB-DESIGNER</h6>
+                    <input type="button" value="My Work"
+                        class="btn btn-light bg-white p-3 bt1 me-3 border-0 fw-bold rounded">
+                    <input type="button" value="Hire Me" class="bt2 text-white p-3 fw-bold rounded">
                 </div>
             </div>
         </div>
@@ -72,12 +73,12 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-fluid" src="assets/img/about-1" alt="">
+                    <img class="img-fluid box-shadow" src="assets/img/about-1" alt="">
                 </div>
                 <div class="col-lg-7 d-flex flex-column justify-content-center">
-                    <h1>About Me.</h1>
-                    <p style="color: rgb(39, 39, 255);">WEB-DESIGNER & GRAPHIC DESIGNER</p>
-                    <p class="py-3">I am <strong style="color: rgb(39, 39, 255);">Joe Joseph.</strong> I am a highly
+                    <h1 class="display-3 fw-bold">About Me.</h1>
+                    <p class="port-primary-color">WEB-DESIGNER & GRAPHIC DESIGNER</p>
+                    <p class="py-3">I am <strong class="port-primary-color">Joe Joseph.</strong> I am a highly
                         competent IT professional with a
                         proven track record in designing websites,
                         networking and managing databases. I have strong technical skills as well as excellent
@@ -119,7 +120,7 @@
 
     <section id="services" class="services py-5 bg-light">
         <div class="container py-5">
-            <h1 class="text-center pb-5">Services.</h1>
+            <h1 class="text-center pb-5 display-3 fw-bold">Services.</h1>
             <div class="row pb-3">
                 <div class="col-lg-4 mb-3">
                     <div class="card border-0 text-center py-3">
@@ -128,7 +129,8 @@
                                 <span><i class="fa-solid fa-display"></i></span>
                             </div>
                             <h4 class="fw-bold pb-2">Web Design</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti dolor quo incidunt?
+                            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                                corrupti dolor quo incidunt?
                                 Placeat, aperiam!</p>
                         </div>
                     </div>
@@ -141,7 +143,8 @@
                                 <span><i class="fa-solid fa-mobile-screen-button"></i></span>
                             </div>
                             <h4 class="fw-bold pb-2">Fully Responsive</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti dolor quo incidunt?
+                            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                                corrupti dolor quo incidunt?
                                 Placeat, aperiam!</p>
                         </div>
                     </div>
@@ -154,7 +157,8 @@
                                 <span><i class="fa-solid fa-code"></i></span>
                             </div>
                             <h4 class="fw-bold pb-2">Development</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti dolor quo incidunt?
+                            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                                corrupti dolor quo incidunt?
                                 Placeat, aperiam!</p>
                         </div>
                     </div>
@@ -169,7 +173,8 @@
                                 <span><i class="fa-brands fa-sketch"></i></span>
                             </div>
                             <h4 class="fw-bold pb-2">Creative Design</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti dolor quo incidunt?
+                            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                                corrupti dolor quo incidunt?
                                 Placeat, aperiam!</p>
                         </div>
                     </div>
@@ -182,7 +187,8 @@
                                 <span><i class="fa-solid fa-camera"></i></span>
                             </div>
                             <h4 class="fw-bold pb-2">Retina Ready</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti dolor quo incidunt?
+                            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                                corrupti dolor quo incidunt?
                                 Placeat, aperiam!</p>
                         </div>
                     </div>
@@ -195,7 +201,8 @@
                                 <span><i class="fa-solid fa-people-arrows"></i></span>
                             </div>
                             <h4 class="fw-bold pb-2">Branding</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti dolor quo incidunt?
+                            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                                corrupti dolor quo incidunt?
                                 Placeat, aperiam!</p>
                         </div>
                     </div>
@@ -209,20 +216,21 @@
 
     <section class="portfolio py-5" id="portfolio">
         <div class="container text-center py-5">
-            <h1 class="text-center pb-5">Portfolio.</h1>
+            <h1 class="text-center pb-5 display-3 fw-bold">Portfolio.</h1>
             <div class="control pb-5">
                 <ul>
-                    <li class="button list-unstyled d-inline-block py-2 px-3" data-filter="filter">All</li>
-                    <li class="button list-unstyled d-inline-block py-2 px-3" data-filter="Brand">Brand</li>
-                    <li class="button list-unstyled d-inline-block py-2 px-3" data-filter="Design">Design</li>
-                    <li class="button list-unstyled d-inline-block py-2 px-3" data-filter="Graphic">Graphic</li>
+                    <li class="button ctrl-btn list-unstyled d-inline-block py-2 px-3" data-filter="filter">All</li>
+                    <li class="button ctrl-btn list-unstyled d-inline-block py-2 px-3" data-filter="Brand">Brand</li>
+                    <li class="button ctrl-btn list-unstyled d-inline-block py-2 px-3" data-filter="Design">Design</li>
+                    <li class="button ctrl-btn list-unstyled d-inline-block py-2 px-3" data-filter="Graphic">Graphic
+                    </li>
                 </ul>
             </div>
             <div class="row pb-4">
                 <div class="col-lg-4">
                     <div class="item position-relative">
                         <img src="assets/img/pot-4.jpg" class="img-fluid filter Brand Design Graphic" alt="">
-                        <span class="position-absolute">
+                        <span class="position-absolute i-span">
                             <i class="fa-solid fa-plus" data-bs-toggle="modal" data-bs-target="#portfoliomodal"></i>
                         </span>
                     </div>
@@ -230,14 +238,14 @@
                 <div class="col-lg-4">
                     <div class="item position-relative">
                         <img src="assets/img/pot-5.jpg" class="img-fluid filter Brand Design Graphic" alt="">
-                        <span class="position-absolute"><i class="fa-solid fa-plus" data-bs-toggle="modal"
+                        <span class="position-absolute i-span"><i class="fa-solid fa-plus" data-bs-toggle="modal"
                                 data-bs-target="#portfoliomodal"></i></span>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item position-relative">
                         <img src="assets/img/pot-6.jpg" class="img-fluid filter Brand Design Graphic" alt="">
-                        <span class="position-absolute"><i class="fa-solid fa-plus" data-bs-toggle="modal"
+                        <span class="position-absolute i-span"><i class="fa-solid fa-plus" data-bs-toggle="modal"
                                 data-bs-target="#portfoliomodal"></i></span>
                     </div>
                 </div>
@@ -246,21 +254,21 @@
                 <div class="col-lg-4">
                     <div class="item position-relative">
                         <img src="assets/img/pot-1.jpg" class="img-fluid filter Brand Design" alt="">
-                        <span class="position-absolute"><i class="fa-solid fa-plus" data-bs-toggle="modal"
+                        <span class="position-absolute i-span"><i class="fa-solid fa-plus" data-bs-toggle="modal"
                                 data-bs-target="#portfoliomodal"></i></span>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item position-relative">
                         <img src="assets/img/pot-2.jpg" class="img-fluid filter Design Graphic" alt="">
-                        <span class="position-absolute"><i class="fa-solid fa-plus" data-bs-toggle="modal"
+                        <span class="position-absolute i-span"><i class="fa-solid fa-plus" data-bs-toggle="modal"
                                 data-bs-target="#portfoliomodal"></i></span>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="item position-relative">
                         <img src="assets/img/pot-3.jpg" class="img-fluid filter Brand " alt="">
-                        <span class="position-absolute"><i class="fa-solid fa-plus" data-bs-toggle="modal"
+                        <span class="position-absolute i-span"><i class="fa-solid fa-plus" data-bs-toggle="modal"
                                 data-bs-target="#portfoliomodal"></i></span>
                     </div>
                 </div>
@@ -273,9 +281,9 @@
 
     <!-- blog -->
 
-    <section id="blog" class="blog py-5" >
+    <section id="blog" class="blog py-5">
         <div class="container">
-            <h1 class="text-center pb-5">Our Blog.</h1>
+            <h1 class="text-center pb-5 display-3 fw-bold">Our Blog.</h1>
             <div class="row py-5">
                 <div class="col-lg-4 mb-3">
                     <div class="card">
@@ -311,7 +319,7 @@
 
     <section class="contact py-5" id="contact">
         <div class="container py-5">
-            <h1 class="text-center pb-5">Contact Us.</h1>
+            <h1 class="text-center pb-5 display-3 fw-bold">Contact Us.</h1>
             <div class="row py-5">
                 <div class="col-lg-10 mx-auto">
                     <div class="row text-center">
@@ -358,7 +366,7 @@
                                     rows="10"></textarea>
                             </div>
                         </div>
-                        <button class="btn3 fw-bold border-0 my-4">Submit</button>
+                        <button class="btn3 py-3 px-5 fw-bold border-0 my-4">Submit</button>
                     </form>
                 </div>
             </div>
@@ -367,7 +375,7 @@
 
 
     <footer class="py-3 text-center align-self-center">
-        <p class="mb-0">Copy Right 2022 © By KPweb All Rights Reserved.</p>
+        <p class="mb-0 text-secondary">Copy Right 2022 © By KPweb All Rights Reserved.</p>
     </footer>
 
 

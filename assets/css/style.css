@@ -5,6 +5,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
+:root{
+    --port-color:rgb(39, 39, 255);
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -35,64 +39,50 @@ body {
 /* main section */
 
 
-.main {
-    background: url(/assets/img/Main-1.jpg) no-repeat center;
+.main{
+    background: url("../img/Main-1.jpg") no-repeat center;
     background-size: cover;
-    width: 100%;
     height: 90vh;
 }
 
-.main h3 {
+.fs-8 {
     font-size: 4.5rem;
-    font-weight: 700;
 }
 
-.main h6 {
-    font-size: 1.5rem;
-    color: rgb(39, 39, 255);
+.port-primary-color{
+    color: var(--port-color);
 }
 
-.main .bt1 {
-    height: 3.5rem;
-    width: 10rem;
-    background-color: white;
-    color: rgb(39, 39, 255);
+.bt1 {
+    color: var(--port-color);
     letter-spacing: 1px;
 }
 
-.main .bt1:hover {
-    background-color: rgb(39, 39, 255);
+.bt1:hover {
+    background-color: var(--port-color) !important;
     color: #ffffff;
     transition: 0.5s;
 }
 
-.main .bt2 {
-    height: 3.5rem;
-    width: 10rem;
+.bt2 {
     background-color: transparent;
     color: white;
-    border: 1px solid rgb(39, 39, 255);
+    border: 1px solid var(--port-color);
     letter-spacing: 1px;
 
 }
 
-.main .bt2:hover {
-    background-color: rgb(39, 39, 255);
+.bt2:hover {
+    background-color: var(--port-color) !important;
     color: #ffffff;
     transition: 0.5s;
 }
 
-.about img {
+.box-shadow{
     -webkit-box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
     box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
 }
-
-h1 {
-    font-size: 4rem;
-    font-weight: 900;
-}
-
 
 .progress {
     background-color: #dedede;
@@ -182,7 +172,7 @@ h1 {
 .btn1 {
     height: 3.5rem;
     width: 10rem;
-    background-color: rgb(39, 39, 255);
+    background-color: var(--port-color);
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
     margin-top: 5rem;
@@ -205,7 +195,7 @@ h1 {
 }
 
 .btn2:hover {
-    background-color: rgb(39, 39, 255);
+    background-color: var(--port-color);
     color: #ffffff;
     transition: 0.5s;
 }
@@ -220,10 +210,6 @@ h1 {
     box-shadow: 0px 0px 18px -12px rgba(0, 0, 0, 0.75);
 }
 
-.card p {
-    color: grey;
-}
-
 .circle {
     width: 70px;
     height: 70px;
@@ -233,7 +219,7 @@ h1 {
 }
 
 .card:hover .circle {
-    background-color: rgb(39, 39, 255);
+    background-color: var(--port-color);
     color: rgb(255, 255, 255);
     transition: 0.5s;
 }
@@ -243,7 +229,7 @@ h1 {
 /* portfolio */
 
 
-.control ul li {
+.ctrl-btn {
     background-color: black;
     color: white;
     cursor: pointer;
@@ -258,8 +244,7 @@ h1 {
     transition: 0.5s;
 }
 
-.item span {
-    position: absolute;
+.i-span{
     top: 40%;
     left: 45%;
     font-size: 40px;
@@ -268,7 +253,7 @@ h1 {
     opacity: 0;
 }
 
-.item:hover span {
+.item:hover .i-span {
     opacity: 1;
     transition: 0.5s;
 }
@@ -294,17 +279,18 @@ h1 {
 
 
 .circle:hover {
-    background-color: rgb(39, 39, 255);
+    background-color: var(--port-color);
     color: rgb(255, 255, 255);
     transition: 0.5s;
 }
 
 
-.contact .btn3 {
-    height: 3.5rem;
-    width: 10rem;
-    background-color: rgb(39, 39, 255);
-    color: rgb(255, 255, 255);
+
+/* contact */
+
+.btn3 {
+    background-color: var(--port-color);
+    color: white;
     letter-spacing: 1px;
     margin-top: 5rem;
 }
@@ -318,6 +304,5 @@ h1 {
 
 
 footer {
-    background-color: rgb(49, 47, 47);
-    color: lightgray;
+    background-color: rgb(15, 15, 15);
 }

@@ -1,41 +1,42 @@
-@media screen and  (max-width: 768px) { 
-  
-.main {
-    width: 100%;
-max-height: fit-content;
+@media screen and (max-width: 768px) {
 
-}
+    .main {
+        width: 100%;
+        height: auto;
 
-.main h3{
-    font-size: 3rem;
-}
+    }
 
-.main h6 {
-    font-size: 1rem;
-}
+    .main h3 {
+        font-size: 3rem;
+    }
 
-.main .bt1 {
-    height: 5rem;
-    width: 7rem;
-    font-size: 1rem;
-}
-.main .bt2 {
-    height: 5rem;
-    width: 7rem;
-    font-size: 1rem;
-}
+    .main h6 {
+        font-size: 1rem;
+    }
+
+    .main .bt1 {
+        height: 5rem;
+        width: 7rem;
+        font-size: 1rem;
+    }
+
+    .main .bt2 {
+        height: 5rem;
+        width: 7rem;
+        font-size: 1rem;
+    }
 
 
-.about h1 {
-   padding-top: 2rem;
-}
+    .about h1 {
+        padding-top: 2rem;
+    }
 
-.portfolio .item img{
-    padding-bottom: 1rem;
-}
+    .portfolio .item img {
+        padding-bottom: 1rem;
+    }
 
-.contact p{
-    padding-bottom: 1.5rem;
-}
+    .contact p {
+        padding-bottom: 1.5rem;
+    }
 
 }
