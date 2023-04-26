@@ -5,8 +5,8 @@
     font-family: 'Roboto Slab', serif;
 }
 
-:root{
-    --port-color:rgb(39, 39, 255);
+:root {
+    --port-color: rgb(39, 39, 255);
 }
 
 body {
@@ -14,19 +14,15 @@ body {
 }
 
 .navbar {
-    background: rgb(188, 208, 216);
     background: linear-gradient(98deg, rgba(188, 208, 216, 1) 0%, rgba(176, 197, 213, 1) 90%, rgba(153, 177, 192, 1) 100%);
 }
 
-.navbar-brand {
-    color: rgb(1, 1, 1);
-    font-size: 2rem;
-
+.navbar-brand:hover {
+    color: var(--port-color) !important;
 }
 
 .nav-link {
     color: rgb(0, 0, 0);
-    font-weight: 700;
     cursor: pointer;
     letter-spacing: 1px;
 }
@@ -39,17 +35,17 @@ body {
 /* main section */
 
 
-.main{
+.main {
     background: url("../img/Main-1.jpg") no-repeat center;
     background-size: cover;
-    height: 90vh;
+    min-height: 100vh;
 }
 
 .fs-8 {
     font-size: 4.5rem;
 }
 
-.port-primary-color{
+.port-primary-color {
     color: var(--port-color);
 }
 
@@ -78,7 +74,7 @@ body {
     transition: 0.5s;
 }
 
-.box-shadow{
+.box-shadow {
     -webkit-box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
     box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
@@ -244,7 +240,7 @@ body {
     transition: 0.5s;
 }
 
-.i-span{
+.i-span {
     top: 40%;
     left: 45%;
     font-size: 40px;
