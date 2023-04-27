@@ -80,10 +80,9 @@ body {
     box-shadow: 14px 14px 18px -17px rgba(0, 0, 0, 0.75);
 }
 
-.progress {
+.port-progress {
     background-color: #dedede;
     height: 25px;
-    width: 100%;
     -webkit-box-shadow: inset 0px 1px 28px -12px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0px 1px 28px -12px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px 1px 28px -12px rgba(0, 0, 0, 0.75);
@@ -92,35 +91,21 @@ body {
 .pro-value1 {
     animation: load1 3s normal forwards;
     background-color: black;
-    height: 25px;
-    width: 0;
-}
-
-.progress p {
-    color: white;
-    padding: 3px 8px;
-
 }
 
 .pro-value2 {
     animation: load2 3s normal forwards;
     background-color: black;
-    height: 25px;
-    width: 0;
 }
 
 .pro-value3 {
     animation: load3 3s normal forwards;
     background-color: black;
-    height: 25px;
-    width: 0;
 }
 
 .pro-value4 {
     animation: load4 3s normal forwards;
     background-color: black;
-    height: 25px;
-    width: 0;
 }
 
 
@@ -199,8 +184,7 @@ body {
 
 /*services */
 
-.card {
-    outline: none;
+.service-card {
     -webkit-box-shadow: 0px 0px 18px -12px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 18px -12px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 18px -12px rgba(0, 0, 0, 0.75);
@@ -214,7 +198,7 @@ body {
     padding: 12px;
 }
 
-.card:hover .circle {
+.service-card:hover .circle {
     background-color: var(--port-color);
     color: rgb(255, 255, 255);
     transition: 0.5s;
